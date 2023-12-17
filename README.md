@@ -35,8 +35,8 @@ Siga estas instruções para executar uma cópia local do projeto em sua máquin
 
 ### Contribuições
 
-## Contribuições são bem-vindas! Sinta-se à vontade para abrir problemas (issues) e enviar pull requests para melhorar o projeto.
+# Contribuições são bem-vindas! Sinta-se à vontade para abrir problemas (issues) e enviar pull requests para melhorar o projeto.
 
-## Licença
+# Licença
 
-## Este projeto é distribuído sob a licença [MIT](LICENSE). Sinta-se livre para utilizar e modificar conforme necessário.
+# Este projeto é distribuído sob a licença [MIT](LICENSE). Sinta-se livre para utilizar e modificar conforme necessário.
