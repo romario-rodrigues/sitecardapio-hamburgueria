@@ -1,11 +1,19 @@
 from django.shortcuts import render
-from django.http import HttpRequest
+from burguer.models import Produto
 
 
 
 # Create your views here.
 def home(request):
-    return render(request, 'burguer/home.html')
+    produtos = Produto.objects.all()
+    context = {
+        'produtos': produtos
+    }
+    return render(request, 'burguer/home.html', context)
 
-def produtos(request):
-    return render(request, 'burguer/produtos.html')
+def detalhe_produto(request, produto_id):
+    produto = Produto.objects.get(pk=produto_id)
+    context = {
+        'produto': produto
+    }
+    return render(request, 'burguer/produtos.html', context)

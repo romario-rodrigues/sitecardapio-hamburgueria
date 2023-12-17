@@ -16,7 +16,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from burguer.views import home, produtos
+from burguer.views import home
+from . import views
+
 
 from django.conf import settings
 from django.conf.urls.static import static
@@ -24,5 +26,5 @@ from django.conf.urls.static import static
 urlpatterns = [
     path('', home),
     path('admin/', admin.site.urls),
-    path('produtos/', produtos),
+    path('produtos/<int:produto_id>', views.detalhe_produto, name='produtos')
 ]   + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

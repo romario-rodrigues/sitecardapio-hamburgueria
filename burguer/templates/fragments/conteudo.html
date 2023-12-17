@@ -13,49 +13,20 @@
 <div class="row my-3">
     <div class="col-md-10 offset-1">
         <div class="row row-cols-1 row-cols-md-3 g-4">
-
-            <div class="col">
-                <div class="card bg-warning">
-
-
-                    <img src="{% static 'burguer/padrao.png' %}" class="card-img-top" alt="hamburguer">
-
-                    <div class="card-body">
-                        <h5 class="card-title text-danger"> Card titulo </h5>
-                        <p class="card-text"> Descrição do produto vai aqui </p>
+            {%for produto in produtos %}
+                <div class="col">
+                <div class="card bg-warning" style="height: 720px;">
+                        <a href="{% url 'produtos' produto.id %}">
+                            <img src="{% static 'burguer/padrao.png' %}" class="card-img-top" alt="hamburguer">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title text-danger">{{produto.nome}}</h5>
+                            <p class="card-text">{{produto.descricao}} </p>
+                        </div>
+                        <div class="span display-4 text-end mx-3 text-danger"> {{produto.preco}}</div>
                     </div>
-                    <div class="span display-4 text-end mx-3 text-danger"> R$20,99 </div>
                 </div>
-            </div>
-
-            <div class="col">
-                <div class="card bg-warning">
-
-
-                    <img src="{% static 'burguer/padrao.png' %}" class="card-img-top" alt="hamburguer">
-
-                    <div class="card-body">
-                        <h5 class="card-title text-danger"> Card titulo</h5>
-                        <p class="card-text"> Descrição do produto vai aqui </p>
-                    </div>
-                    <div class="span display-4 text-end mx-3 text-danger"> R$18,99 </div>
-                </div>
-            </div>
-
-            <div class="col">
-                <div class="card bg-warning">
-
-
-                    <img src="{% static 'burguer/padrao.png' %}" class="card-img-top" alt="hamburguer">
-
-                    <div class="card-body">
-                        <h5 class="card-title text-danger"> Card titulo </h5>
-                        <p class="card-text"> Descrição do produto vai aqui </p>
-                    </div>
-                    <div class="span display-4 text-end mx-3 text-danger"> R$15,99 </div>
-                </div>
-            </div>
-
+            {% endfor %}
         </div>
     </div>
 </div>
