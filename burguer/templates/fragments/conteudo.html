@@ -15,15 +15,16 @@
         <div class="row row-cols-1 row-cols-md-3 g-4">
             {%for produto in produtos %}
                 <div class="col">
-                <div class="card bg-warning" style="height: 720px;">
+                <div class="card bg-warning p-5" style="height:680px">
+                    
                         <a href="{% url 'produtos' produto.id %}">
-                            <img src="{% static 'burguer/padrao.png' %}" class="card-img-top" alt="hamburguer">
+                            <img src="{{ produto.imagem.url }}" class="card-img-top" alt="hamburguer">
                         </a>
                         <div class="card-body">
-                            <h5 class="card-title text-danger">{{produto.nome}}</h5>
-                            <p class="card-text">{{produto.descricao}} </p>
+                            <h5 class="card-title text-danger"> {{produto.nome}} </h5>
+                            <p class="card-text"> {{produto.descricao}} </p>
                         </div>
-                        <div class="span display-4 text-end mx-3 text-danger"> {{produto.preco}}</div>
+                        <div class="span display-4 text-end mx-3 text-danger"> {{produto.preco}} </div>
                     </div>
                 </div>
             {% endfor %}
