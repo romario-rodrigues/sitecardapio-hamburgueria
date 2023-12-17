@@ -3,12 +3,16 @@
 
 {% block titulo %} Pyburguer {% endblock %}
 
-{% block header %}
+{% block navbar %}
 
     {% include "fragments/navbar.html" %}
 
 {% endblock  %}
 
+{% block banner %} 
+    {% include "fragments/banner.html" %}
+{% endblock %}
+
 {% block content%}
-    <h1>Página inicial. Injeção de conteudo</h1>
+    {% include "fragments/conteudo.html" %}
 {% endblock %}
