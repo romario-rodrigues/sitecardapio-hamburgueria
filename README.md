@@ -1,6 +1,6 @@
-# Hamburgeruia Website
+# Hamburgueria Website
 
-Este repositório contém o código-fonte de um site desenvolvido para uma hamburgeruia, utilizando Python, Django, Bootstrap 5 e HTML. O projeto visa criar uma plataforma intuitiva e atraente para exibir o cardápio e outras informações relevantes da hamburgeruia.
+Este repositório contém o código-fonte de um site desenvolvido para uma hamburgueria, utilizando Python, Django, Bootstrap 5 e HTML. O projeto visa criar uma plataforma intuitiva e atraente para exibir o cardápio e outras informações relevantes da hamburgueria.
 
 ## Tecnologias Utilizadas
 
