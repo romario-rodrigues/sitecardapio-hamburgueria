@@ -1,4 +1,4 @@
-### Hamburgeruia Website
+# Hamburgeruia Website
 
 Este repositório contém o código-fonte de um site desenvolvido para uma hamburgeruia, utilizando Python, Django, Bootstrap 5 e HTML. O projeto visa criar uma plataforma intuitiva e atraente para exibir o cardápio e outras informações relevantes da hamburgeruia.
 
@@ -33,10 +33,10 @@ Siga estas instruções para executar uma cópia local do projeto em sua máquin
 
 5. Acesse o Site: Abra o navegador e visite [http://localhost:8000](http://localhost:8000).
 
-### Contribuições
+# Contribuições
 
-# Contribuições são bem-vindas! Sinta-se à vontade para abrir problemas (issues) e enviar pull requests para melhorar o projeto.
+### Contribuições são bem-vindas! Sinta-se à vontade para abrir problemas (issues) e enviar pull requests para melhorar o projeto.
 
-# Licença
+### Licença
 
-# Este projeto é distribuído sob a licença [MIT](LICENSE). Sinta-se livre para utilizar e modificar conforme necessário.
+### Este projeto é distribuído sob a licença [MIT](LICENSE). Sinta-se livre para utilizar e modificar conforme necessário.
