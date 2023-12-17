@@ -23,7 +23,7 @@ Siga estas instruções para executar uma cópia local do projeto em sua máquin
 
 1. **Clone o Repositório:**
     ```bash
-    git clone https://github.com/seu-usuario/nome-do-repositorio.git
+    git clone https://github.com/romario-rodrigues/sitecardapio-hamburgueria
     ```
 
 2. **Instale as Dependências:**
